@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "20d1c2f1-794c-4b07-81a6-c0adc057cf52",
+		"name": "NODE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "CREATE USERS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"test\",\r\n    \"email\": \"teat.rddev@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}3333/users",
+							"host": [
+								"{{URL}}3333"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FINDALL USERS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}3333/users",
+							"host": [
+								"{{URL}}3333"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Addresses",
+			"item": [
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"zipcode\": \"096635-50\",\r\n    \"street\": \"Rua test\",\r\n    \"number\": 111\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}3333/users/1/addresses",
+							"host": [
+								"{{URL}}3333"
+							],
+							"path": [
+								"users",
+								"1",
+								"addresses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INDEX",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}3333/users/1/addresses",
+							"host": [
+								"{{URL}}3333"
+							],
+							"path": [
+								"users",
+								"1",
+								"addresses"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Techs",
+			"item": [
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\": \"ReactJS.js\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}3333/users/1/techs",
+							"host": [
+								"{{URL}}3333"
+							],
+							"path": [
+								"users",
+								"1",
+								"techs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\": \"Node.js\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}3333/users/1/techs",
+							"host": [
+								"{{URL}}3333"
+							],
+							"path": [
+								"users",
+								"1",
+								"techs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INDEX",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}3333/users/1/techs",
+							"host": [
+								"{{URL}}3333"
+							],
+							"path": [
+								"users",
+								"1",
+								"techs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
